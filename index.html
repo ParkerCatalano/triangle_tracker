@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Triangle Tracker</title>
   </head>
   <body>
     <div class="container">
-      <h1>Track That Triangle</h1>
+      <h1>TRACK THAT TRIANGLE</h1>
+
+      <form id="tri-track">
+        <div class="form-group">
+          <label for="lengths">Enter 3 side lengths, left line first, bottom line second, right line last (1,2,3)</label>
+          <input id="lengths" type="numbers" name="sides">
+        </div>
+
+        <button type="submit" class="btn">What type of triangle is it???</button>
+      </form>
+
+      <div id="result">
+        <p>These figures represent a <span class="tri"></span></p>
+      </div>
 
   </body>
 </html>
